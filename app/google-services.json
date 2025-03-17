@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "304461209090",
+    "project_id": "examenuf2alex",
+    "storage_bucket": "examenuf2alex.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:304461209090:android:bbf8cf8d3e89c155d7911b",
+        "android_client_info": {
+          "package_name": "com.alexramos.examen_uf2_alex"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrMds-mZezYF1s1eF3p8TPXSODNvmCmqU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
