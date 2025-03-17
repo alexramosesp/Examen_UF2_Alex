@@ -55,36 +55,39 @@
 
 
     <!-- Campo de Username -->
+
+    <!-- Botón de Iniciar Sesión -->
     <EditText
         android:id="@+id/username_input"
         android:layout_width="0dp"
         android:layout_height="50dp"
-        android:hint="Username"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="24dp"
         android:background="@drawable/edit_text_background"
-        android:textColor="@android:color/white"
-        android:padding="10dp"
+        android:hint="Username"
         android:inputType="textPersonName"
-        app:layout_constraintTop_toBottomOf="@id/password_input"
-        app:layout_constraintStart_toStartOf="parent"
+        android:padding="10dp"
+        android:textColor="@android:color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="15dp"
-        android:layout_marginHorizontal="20dp"/>
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/password_input" />
 
-    <!-- Botón de Iniciar Sesión -->
+    <!-- Links de Política y Términos -->
+
     <Button
         android:id="@+id/login_button"
         android:layout_width="0dp"
         android:layout_height="50dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="48dp"
+        android:backgroundTint="@color/green"
         android:text="Iniciar Sessió"
         android:textColor="@android:color/white"
-        android:backgroundTint="@color/green"
-        android:layout_marginTop="20dp"
-        app:layout_constraintTop_toBottomOf="@id/username_input"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginHorizontal="20dp"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spinner" />
 
-    <!-- Links de Política y Términos -->
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -120,4 +123,18 @@
             android:textColor="@android:color/darker_gray"
             android:textSize="12sp"/>
     </LinearLayout>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="148dp"
+        app:layout_constraintBottom_toTopOf="@+id/login_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username_input"
+        android:layout_marginEnd="10dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
